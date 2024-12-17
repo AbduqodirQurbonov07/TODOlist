@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .bg-grey11 {
+    @apply rounded-full h-12 bg-[#A5A5A5] font-medium flex justify-center items-center;
+  }
+  .bg-orenge {
+    @apply rounded-full h-12 bg-[#FF9F0A] flex justify-center items-center text-slate-50;
+  }
+  .bg-grey {
+    @apply text-slate-50 flex justify-center items-center rounded-full h-12 bg-[#333333];
+  }
+}

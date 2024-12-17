@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>canculyator</title>
+  </head>
+  <body
+    class="flex justify-center items-center bg-gradient-to-b from-[#A9C9FF] to-[#FFBBEC] w-screen h-screen"
+  >
+    <div class="flex justify-center items-center w-screen h-screens">
+      <div class="flex flex-col border-blue-500 bg-black p-2 rounded-xl">
+        <div class="flex justify-between">
+          <ul>
+            <li id="time" class="text-slate-50">16:15</li>
+          </ul>
+          <ul class="flex gap-1">
+            <li>
+              <img src="../svgs/antena.svg" alt="" />
+            </li>
+            <li>
+              <img src="../svgs/wifi.svg" alt="" />
+            </li>
+            <li><img src="../svgs/batary.svg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col items-end text-emerald-50 mt-24 mb-4">
+            <li
+              id="calc-screen-top"
+              class="text-slate-400 font-medium h-2"
+            ></li>
+            <li
+              id="calc-screen-button"
+              class="text-slate-50 h-4 mb-2 mt-2 font-semibold text-4xl"
+            ></li>
+          </ul>
+        </div>
+        <div id="calc-wrepper">
+          <ul class="grid grid-cols-4 gap-1">
+            <li id="calc-clear" class="w-12 bg-grey11">AC</li>
+            <li id="calc-front_minus" class="bg-grey11">+/-</li>
+            <li id="calc-percent " class="bg-grey11">%</li>
+            <li id="calc-tobe" class="w-12 bg-orenge">/</li>
+            <li id="calc-seven" class="w-12 bg-grey">7</li>
+            <li id="calc-eight" class="bg-grey">8</li>
+            <li id="calc-nine" class="bg-grey">9</li>
+            <li id="calc-increase" class="w-12 bg-orenge">*</li>
+            <li id="calc-four" class="bg-grey">4</li>
+            <li id="calc-five" class="bg-grey">5</li>
+            <li id="calc-six" class="bg-grey">6</li>
+            <li id="calc-subtraction" class="w-12 bg-orenge">-</li>
+            <li id="calc-one" class="bg-grey">1</li>
+            <li id="calc-two" class="bg-grey">2</li>
+            <li id="calc-three" class="bg-grey">3</li>
+            <li id="calc-add" class="w-12 bg-orenge">+</li>
+            <li id="calc-zero" class="text-slate-50 col-span-2 bg-grey">0</li>
+            <li id="calc-point" class="bg-grey">.</li>
+            <li id="calc-equal" class="w-12 bg-orenge">=</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/calculator.js"></script>
+  </body>
+</html>
