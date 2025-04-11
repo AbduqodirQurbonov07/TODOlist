@@ -6,7 +6,7 @@ const deletebtn = document.querySelector(".delete-btn");
 const addlist = document.querySelector(".addli");
 let todoarrey = [];
 
-let storegeTodos = JSON.parse(localStorage.getItem("todos")) ?? [];
+let storegeTodos = JSON.parse(localStorage.getItem("todos")) ?? []; 
 addEventListener("DOMContentLoaded", () => {
   fetch("http://localhost:3000/todos")
     .then((response) => response.json())
@@ -102,11 +102,12 @@ todolists.addEventListener("click", (e) => {
     );
   }
   if (e.target.id == "delete") {
-    fetch();
-    `http://localhost:3000/todos${e.target.parentElement.parentElement.parentElement.id}`,
+    fetch(
+      `http://localhost:3000/todos${e.target.parentElement.parentElement.parentElement.id}`,
       {
         method: "DELETE",
-      };
+      }
+    );
     console.log(e.target.parentElement.parentElement.parentElement.id);
   }
 

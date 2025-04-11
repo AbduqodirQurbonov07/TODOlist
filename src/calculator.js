@@ -27,7 +27,10 @@ if (time.id == "time") {
   let timer = setInterval(() => {
     `${new Date().getHours}:${new Date().getMinutes}:${new Date().getSeconds} `;
   }, 1000);
-  time.textContent = timer;
+  let hour = new Date().getHours();
+  let minute = new Date().getMinutes();
+  let vaqt = `${hour} : ${minute}`;
+  time.textContent = vaqt;
 }
 
 wrepper.addEventListener("click", (e) => {
